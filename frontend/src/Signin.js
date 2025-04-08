@@ -29,7 +29,7 @@ const Signin = () => {
       const responseData = await response.json();
       if (responseData.status) {
         const { token, user } = responseData;
-        Cookies.set('token', token, { expires: 7 }); // Store token in cookies with expiry
+        Cookies.set('token', token, { expires: 7 }); 
         if (user.role === "admin") {
           navigate('/HomeAdmin');
         } else {

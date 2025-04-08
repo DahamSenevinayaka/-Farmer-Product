@@ -127,11 +127,11 @@ function Homescreen() {
                 <div className="col-md-4" key={food._id}>
                   <div className="food-card">
                     <h3>{food.foodName}</h3>
-                    <p>Price: ${food.pricePerKilo} per kilo</p>
+                    <p>Price: Rs.{food.pricePerKilo} per kilo</p>
                     <p>Units: {food.unitsInKilos} kilos</p>
                     <p>Region: {food.region}</p>
                     <p>Contact: {food.phoneNumber}</p>
-                    {/* Add delete button here if needed */}
+
                   </div>
                 </div>
               ))}
